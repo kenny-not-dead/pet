@@ -2,8 +2,7 @@ const models = document.getElementById('models')
       sentence = document.getElementById('sentence') 
       service = document.getElementById('service') 
       news = document.getElementById('news') 
-
-const navbarList = document.querySelector('.navbar-list')
+      navbarList = document.querySelector('.navbar-list')
       contentInfo = document.querySelector('.content-info')
       btnup = document.querySelector('.btnup')
       btndown = document.querySelector('.btndown')
@@ -187,7 +186,8 @@ news.addEventListener('click', () => {
     newsList()
 })
 
-
+i1 = 0, i2 = 2; 
+n1 = 0, n2 = 1;
 
 const modelList = () => {
     contentInfo.innerHTML = `<ul class="cards"></ul>`;
@@ -216,8 +216,6 @@ const modelList = () => {
     removeNavig()
     }
 
-i1 = 0, i2 = 2; 
-n1 = 0, n2 = 1;
 
 const sentenceList = () => {
     contentInfo.innerHTML = `<ul class="sentences"></ul>`;
@@ -270,7 +268,6 @@ const newsList = () => {
     `).join(''); 
     showNavig()
 }
-
 
 
 const serviceList = () => {

@@ -4,6 +4,7 @@ div, p, input, button, form, span, a, ul, li {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 p {
@@ -13,14 +14,112 @@ p {
 
 body{
     font-family: 'Roboto', sans-serif;
-    justify-content: center;
-    display: flex;
 }
 
 .container{
     width: 1270px;
     display: flex;
     justify-content: center;
+    margin: 50px auto;
+}
+
+.header-wrapper{
+    background: url('./img/header/1.jpg') no-repeat center top / cover;
+}
+
+.header{
+    padding: 20px 50px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    width: 100px;
+}
+
+.nav{
+    font-size: 12px;
+    color: white;
+    display: inline;
+}
+
+
+.header-p, .navwrapper {
+    display: inline;
+}
+
+.header-p{
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.nav-li {
+    padding-left: 20px;
+    display: inline;
+    
+}
+
+.nav-li a:hover{
+    border-bottom: 3px solid white;
+}
+
+.offer{
+    position: absolute;
+    color: white;
+    width: 400px;
+    margin-top: -345px;
+    margin-left: 130px;
+}
+.offer-p{
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin: 300px 0
+}
+
+.header-nav-span{
+    border-radius: 50%;
+    padding: 8px;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.header-nav-span:hover{
+    opacity: 0.7;
+}
+
+.header-nav-svg{
+    color: white;
+    padding: 4px;
+    vertical-align: middle;
+}
+.header-dot{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.dot{
+        display: inline-block;
+        width: 40px;
+        height: 2px;
+        background-color: #868686;
+        margin-right: 15px;
+        cursor: pointer;
+}
+
+
+.dot:hover{
+
 }
 
 
@@ -92,26 +191,6 @@ list-style-type: none
     padding: 300px 10px;
 }
 
-.dots-wrapper {
-    position: absolute;
-    display: flex;
-    margin-top: 500px;
-    padding-left: 350px;
-}
-
-.dot{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: gray;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.dot.active {
-    background-color: #000000;
-}
-
 
 .more {
     display: block;
@@ -144,6 +223,8 @@ list-style-type: none
 .content-btn{
     text-align: center;
     display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .content-btn.active{
@@ -204,7 +285,9 @@ list-style-type: none
 }
 
 .news-img{
-    width: 100%;
+    object-fit: cover;
+    height: 375px;
+    width: 830px;
 }
 
 .second-news-img{
