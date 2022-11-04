@@ -162,24 +162,40 @@ models.addEventListener("click", () => {
   removeActive();
   models.classList.add("active");
   modelList();
+  showmenup.innerHTML = `Модельный ряд`
+  if( window.innerWidth <= 768 ){
+    hidemenu()
+}
 });
 
 sentence.addEventListener("click", () => {
   removeActive();
   sentence.classList.add("active");
   sentenceList();
+  showmenup.innerHTML = `Специальные предложения`
+  if( window.innerWidth <= 768 ){
+    hidemenu()
+}
 });
 
 service.addEventListener("click", () => {
   removeActive();
   service.classList.add("active");
   serviceList();
+  showmenup.innerHTML = `Сервисное обслуживание`
+  if( window.innerWidth <= 768 ){
+    hidemenu()
+}
 });
 
 news.addEventListener("click", () => {
   removeActive();
   news.classList.add("active");
   newsList();
+  showmenup.innerHTML = `Новости HAVAL`
+  if( window.innerWidth <= 768 ){
+    hidemenu()
+}
 });
 
 (i1 = 0), (i2 = 2);
@@ -446,4 +462,34 @@ btnnext.addEventListener('click', nextslide);
 btnprev.addEventListener('click', prevslide);
 setInterval(() => {nextslide (index)}, 5000);
 
+
+
+const showMenuBtn = document.querySelector('.show-menu');
+      hideMenuBtn = document.querySelector('.hide-menu')
+      navbar = document.querySelector('.navbar')
+      showmenup = document.querySelector('.show-menu-p')
+
+
+
+showMenuBtn.addEventListener('click', () => {
+    showMenuBtn.style.display = 'none';
+    hideMenuBtn.style.display = 'flex';
+    navbar.style.display = 'flex'
+})
+
+hideMenuBtn.addEventListener('click', () => {
+    hidemenu()
+    }
+)
+
+
+
+
+
+ let hidemenu = () => {
+    showMenuBtn.style.display = 'block';
+    hideMenuBtn.style.display = 'none';
+    navbar.style.display = 'none'
+
+ }
 
