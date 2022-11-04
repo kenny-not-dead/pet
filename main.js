@@ -490,6 +490,21 @@ hideMenuBtn.addEventListener('click', () => {
     showMenuBtn.style.display = 'block';
     hideMenuBtn.style.display = 'none';
     navbar.style.display = 'none'
+    
 
  }
 
+
+ const hamburger = document.querySelector('.hamburger')
+       nav = document.querySelector('.nav')
+       closehamburger = document.querySelector('.bi-x-lg')
+
+hamburger.addEventListener('click', () => {
+    nav.style.display = 'block'
+    closehamburger.style.display = 'block'
+})
+
+closehamburger.addEventListener('click', () => {
+    nav.style.display = 'none'
+    closehamburger.style.display = 'none'
+})

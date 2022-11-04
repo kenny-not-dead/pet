@@ -56,7 +56,6 @@ body {
 }
 
 .header {
-  padding: 20px 50px;
   border-bottom: 1px solid white;
   display: flex;
   justify-content: space-between;
@@ -64,10 +63,21 @@ body {
 
 .logo {
   width: 100px;
+  padding: 20px 20px 20px 50px;
 }
 
 .hamburger{
     display: none;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+
+
+
+.bi-x-lg{
+    display: none;
+    z-index: 999;
+    margin: 10px;
 }
 
 .nav {
@@ -79,6 +89,12 @@ body {
 .header-p,
 .navwrapper {
   display: inline;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+
+.header-a {
+    padding-top: 20px;
 }
 
 .header-p {
@@ -413,6 +429,11 @@ li {
 @media screen and (max-width: 1280px) {
 .nav{
     padding-left: 0px;
+    font-size: 12px;
+}
+
+.header-p, .navwrapper {
+    padding-right: 20px;
 }
 
 .container{
@@ -432,6 +453,10 @@ li {
 @media screen and (max-width: 1190px) {
     .nav-li {
         padding-left: 10px;
+    }
+
+    .header-p, .navwrapper {
+        padding-right: 20px;
     }
 
     .news-img {
@@ -476,6 +501,32 @@ li {
     height:24px 
 }
 
+.logo {
+    padding: 20px;
+}
+
+.navwrapper{
+    width: 100%;
+    background: white;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+}
+
+.nav-li{
+text-align: center;
+}
+
+.nav-li-a{
+    display: block;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
 .nav, .header-p, .header-nav-svg{
     display: none;
 }
@@ -483,6 +534,7 @@ li {
 .logo {
     width: 75px;
     height: 20px;
+    
 }
 
 .header-a{
@@ -615,4 +667,31 @@ li {
     display: block;
 }
 
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        width: 360px;
+    }
+
+    .card {
+        width: 220px;
+}
+    .card-img {
+        width: 200px;
+    }
+
+    .content {
+        width: 285px;
+    }
+
+    .footer {
+        display: block;
+        padding: 50px;
+    }
+
+    .offer {
+        margin-left: 25px;
+        width: 325px;
+    }
 }
