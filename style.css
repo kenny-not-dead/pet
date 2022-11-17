@@ -694,4 +694,32 @@ text-align: center;
         margin-left: 25px;
         width: 325px;
     }
+
+    .sentence-img {
+        width: 75%;
+      }
+
+      .sentence-info {
+        width: 300px;
+    }
+
+    .news-img {
+        height: 175px;
+        width: 315px;
+    }
+
+    .news-p {
+        width: 250px;
+        font-size: 14px;
+    }
+    
+    .info-h3 {
+        font-weight: 700;
+        font-size: 18px;
+        width: 210px;
+    }
+
+    .info {
+        padding-left: 10px;
+    }
 }
